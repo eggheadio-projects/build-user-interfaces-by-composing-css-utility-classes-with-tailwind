@@ -1,4 +1,9 @@
 {
+  "name": "build-user-interfaces-by-composing-css-utility-classes-with-tailwind",
+  "private": true,
+  "workspaces": [
+    "lessons/*"
+  ],
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-postcss": "^8.0.0",
