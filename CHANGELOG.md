@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - This file.
+- All lesson branches converted to monorepo
+- Yarn workspaces, build scripts
+- `prettier#1.16`
 
 ### Changed
 
@@ -19,3 +22,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update `tailwindcss#0.1.3->0.7.4`.
 
 ### Removed
+
+- All lesson branches.
