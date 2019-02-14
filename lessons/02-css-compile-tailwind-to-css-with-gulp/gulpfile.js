@@ -16,6 +16,6 @@ gulp.task("css", () => {
 });
 
 /* not used in this lesson - but leaving here as it is pretty handy */
-// gulp.task("default", ["css"], () => {
-//   gulp.watch(PATHS.css, ["css"]);
-// });
+// gulp.task("default", gulp.series("css", () => {
+//   gulp.watch(PATHS.css, gulp.series("css"));
+// }));

@@ -1,5 +1,5 @@
 {
-  "name": "01-css-compile-tailwind-to-css-with-gulp",
+  "name": "02-css-compile-tailwind-to-css-with-gulp",
   "version": "0.0.0-unversioned",
   "license": "ISC",
   "devDependencies": {

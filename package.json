@@ -1,13 +1,6 @@
 {
   "repository": "git@github.com:eggheadio-projects/egghead-tailwind.git",
   "private": true,
-  "scripts": {
-    "gulp": "aux() { cd $(ls -d lessons/*\"$2\"*) && gulp \"$1\"; }; aux",
-    "clean": "rm -rf lessons/*/{dist,.cache}",
-    "clean:node_modules": "find . -name node_modules | xargs rm -rf",
-    "format": "prettier **/*.{js,json} -l --write --ignore-path .gitignore || :",
-    "latest": "yarn upgrade-interactive --latest && yarn upgrade -L"
-  },
   "workspaces": [
     "lessons/*"
   ],

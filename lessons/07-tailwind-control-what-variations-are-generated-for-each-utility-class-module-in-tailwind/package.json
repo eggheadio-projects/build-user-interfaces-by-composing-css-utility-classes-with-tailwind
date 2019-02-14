@@ -1,5 +1,5 @@
 {
-  "name": "06-tailwind-control-what-variations-are-generated-for-each-utility-class-module-in-tailwind",
+  "name": "07-tailwind-control-what-variations-are-generated-for-each-utility-class-module-in-tailwind",
   "version": "0.0.0-unversioned",
   "license": "ISC",
   "devDependencies": {
