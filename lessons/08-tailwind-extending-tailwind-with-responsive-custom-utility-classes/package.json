@@ -1,7 +1,10 @@
 {
+  "name": "08-tailwind-extending-tailwind-with-responsive-custom-utility-classes",
+  "version": "0.0.0-unversioned",
+  "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
-    "tailwindcss": "^0.1.3"
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.7.4"
   }
 }
