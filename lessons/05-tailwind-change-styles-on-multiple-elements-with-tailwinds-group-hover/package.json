@@ -1,8 +1,10 @@
 {
+  "name": "05-tailwind-change-styles-on-multiple-elements-with-tailwinds-group-hover",
+  "version": "0.0.0-unversioned",
+  "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
-    "tailwindcss": "^0.4.0"
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.7.4"
   }
 }
