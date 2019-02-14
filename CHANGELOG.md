@@ -11,11 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - This file.
+- All lesson branches converted to monorepo
+- Yarn workspaces
+- `prettier#1.16`
+- README
 
 ### Changed
 
 - Update `gulp#3.9.1->4.0.0`.
 - Update `gulp-postcss#7.0.0->8.0.0`.
 - Update `tailwindcss#0.1.3->0.7.4`.
+- Replace `["..."]` task syntax with `gulp.series("...")` syntax
 
 ### Removed
+
+- All lesson branches.

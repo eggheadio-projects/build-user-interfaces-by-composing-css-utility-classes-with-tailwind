@@ -4,7 +4,7 @@ const tailwindcss = require("tailwindcss");
 
 const PATHS = {
   css: "./src/styles.css",
-  confing: "./tailwind.js",
+  config: "./tailwind.js",
   dist: "./"
 };
 
@@ -15,7 +15,9 @@ gulp.task("css", () => {
     .pipe(gulp.dest(PATHS.dist));
 });
 
-/* not used in this lesson - but leaving here as it is pretty handy */
-// gulp.task("default", ["css"], () => {
-//   gulp.watch(PATHS.css, ["css"]);
-// });
+gulp.task(
+  "default",
+  gulp.series("css", () => {
+    gulp.watch(PATHS.css, gulp.series("css"));
+  })
+);

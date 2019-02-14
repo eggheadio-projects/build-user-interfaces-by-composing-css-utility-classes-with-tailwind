@@ -1,0 +1,12 @@
+{
+  "name": "13-tailwind-removing-unused-css-in-tailwind-with-purgecss",
+  "version": "0.0.0-unversioned",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.7.4",
+    "gulp-purgecss": "^0.18.0",
+    "browser-sync": "^2.18.13"
+  }
+}

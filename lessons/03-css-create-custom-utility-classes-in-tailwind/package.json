@@ -1,0 +1,10 @@
+{
+  "name": "03-css-create-custom-utility-classes-in-tailwind",
+  "version": "0.0.0-unversioned",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.7.4"
+  }
+}

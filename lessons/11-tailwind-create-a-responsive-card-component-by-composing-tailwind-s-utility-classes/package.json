@@ -1,0 +1,10 @@
+{
+  "name": "11-tailwind-create-a-responsive-card-component-by-composing-tailwind-s-utility-classes",
+  "version": "0.0.0-unversioned",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.7.4"
+  }
+}
