@@ -22,7 +22,7 @@ yarn global add gulp
 ```
 
 ## Running the Project
-
+Each lesson in this course lives under the "lessons" directory
 
 1. `yarn` installs all dependencies.
 2. `gulp` commands are ran in each lesson folder
