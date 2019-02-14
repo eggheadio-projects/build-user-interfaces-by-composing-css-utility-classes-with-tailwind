@@ -1,0 +1,32 @@
+@tailwind preflight;
+
+.button {
+  @apply .bg-purple .text-white .font-bold .px-4 .py-2 .rounded mr-1 mb-2;
+}
+
+.button:hover {
+  @apply .bg-purple-dark;
+}
+
+.button--pink {
+  @apply .bg-pink;
+}
+.button--pink:hover {
+  @apply .bg-pink-dark;
+}
+
+.button--teal {
+  @apply .bg-teal;
+}
+.button--teal:hover {
+  @apply .bg-teal-dark;
+}
+
+.button--pill {
+  @apply .rounded-full;
+}
+
+.button--square {
+  @apply .rounded-none;
+}
+@tailwind utilities;
