@@ -38,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update `gulp#4.0.0->4.0.2`.
 - Update `tailwindcss#0.7.4->1.0.5`.
 - Fixed lesson 9 code to work as intended, as it was matching a previous lesson (lesson 3, I believe).
-- Changed `@tailwind preflight;` to `@tailwind base;` on all lessons.
+- Changed `@tailwind preflight;` to `@tailwind base;` in `/src/styles.css` on all lessons.
 - Changed the title on `index.html` on lesson 05 to match lesson name.
 
 - Heavily changed `tailwind.js` file due to tailwindcss 1.0.0 update. Changes referenced on the official changelog following the update guide.
