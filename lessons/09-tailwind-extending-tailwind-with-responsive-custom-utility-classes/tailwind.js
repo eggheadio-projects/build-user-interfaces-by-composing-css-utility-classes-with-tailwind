@@ -10,139 +10,96 @@ Tailwind specifically for your project. Don't be intimidated by the
 length of this file. It's really just a big JavaScript object and
 we've done our very best to explain each section.
 
-View the full documentation at https://tailwindcss.com.
-
-
-|-------------------------------------------------------------------------------
-| The default config
-|-------------------------------------------------------------------------------
-|
-| This variable contains the default Tailwind config. You don't have
-| to use it, but it can sometimes be helpful to have available. For
-| example, you may choose to merge your custom configuration
-| values with some of the Tailwind defaults.
-|
-*/
-
-var defaultConfig = require("tailwindcss/defaultConfig")();
-
-/*
-|-------------------------------------------------------------------------------
-| Colors                                    https://tailwindcss.com/docs/colors
-|-------------------------------------------------------------------------------
-|
-| Here you can specify the colors used in your project. To get you started,
-| we've provided a generous palette of great looking colors that are perfect
-| for prototyping, but don't hesitate to change them for your project. You
-| own these colors, nothing will break if you change everything about them.
-|
-| We've used literal color names ("red", "blue", etc.) for the default
-| palette, but if you'd rather use functional names like "primary" and
-| "secondary", or even a numeric scale like "100" and "200", go for it.
-|
-*/
-
-var colors = {
-  transparent: "transparent",
-
-  black: "#222b2f",
-  "grey-darkest": "#364349",
-  "grey-darker": "#596a73",
-  "grey-dark": "#70818a",
-  grey: "#9babb4",
-  "grey-light": "#dae4e9",
-  "grey-lighter": "#f3f7f9",
-  "grey-lightest": "#fafcfc",
-  white: "#ffffff",
-
-  "red-darkest": "#420806",
-  "red-darker": "#6a1b19",
-  "red-dark": "#cc1f1a",
-  red: "#e3342f",
-  "red-light": "#ef5753",
-  "red-lighter": "#f9acaa",
-  "red-lightest": "#fcebea",
-
-  "orange-darkest": "#542605",
-  "orange-darker": "#7f4012",
-  "orange-dark": "#de751f",
-  orange: "#f6993f",
-  "orange-light": "#faad63",
-  "orange-lighter": "#fcd9b6",
-  "orange-lightest": "#fff5eb",
-
-  "yellow-darkest": "#453411",
-  "yellow-darker": "#684f1d",
-  "yellow-dark": "#f2d024",
-  yellow: "#ffed4a",
-  "yellow-light": "#fff382",
-  "yellow-lighter": "#fff9c2",
-  "yellow-lightest": "#fcfbeb",
-
-  "green-darkest": "#032d19",
-  "green-darker": "#0b4228",
-  "green-dark": "#1f9d55",
-  green: "#38c172",
-  "green-light": "#51d88a",
-  "green-lighter": "#a2f5bf",
-  "green-lightest": "#e3fcec",
-
-  "teal-darkest": "#0d3331",
-  "teal-darker": "#174e4b",
-  "teal-dark": "#38a89d",
-  teal: "#4dc0b5",
-  "teal-light": "#64d5ca",
-  "teal-lighter": "#a0f0ed",
-  "teal-lightest": "#e8fffe",
-
-  "blue-darkest": "#05233b",
-  "blue-darker": "#103d60",
-  "blue-dark": "#2779bd",
-  blue: "#3490dc",
-  "blue-light": "#6cb2eb",
-  "blue-lighter": "#bcdefa",
-  "blue-lightest": "#eff8ff",
-
-  "indigo-darkest": "#191e38",
-  "indigo-darker": "#2f365f",
-  "indigo-dark": "#5661b3",
-  indigo: "#6574cd",
-  "indigo-light": "#7886d7",
-  "indigo-lighter": "#b2b7ff",
-  "indigo-lightest": "#e6e8ff",
-
-  "purple-darkest": "#1f133f",
-  "purple-darker": "#352465",
-  "purple-dark": "#794acf",
-  purple: "#9561e2",
-  "purple-light": "#a779e9",
-  "purple-lighter": "#d6bbfc",
-  "purple-lightest": "#f3ebff",
-
-  "pink-darkest": "#45051e",
-  "pink-darker": "#72173a",
-  "pink-dark": "#eb5286",
-  pink: "#f66d9b",
-  "pink-light": "#fa7ea8",
-  "pink-lighter": "#ffbbca",
-  "pink-lightest": "#ffebef"
-};
+View the full documentation at https://tailwindcss.com. */
 
 module.exports = {
-  /*
-  |-----------------------------------------------------------------------------
-  | Colors                                  https://tailwindcss.com/docs/colors
-  |-----------------------------------------------------------------------------
-  |
-  | The color palette defined above is also assigned to the "colors" key of
-  | your Tailwind config. This makes it easy to access them in your CSS
-  | using Tailwind's config helper. For example:
-  |
-  | .error { color: config('colors.red') }
-  |
-  */
+  important: false,
+  theme: {
+    colors: {
+      transparent: "transparent",
 
-  colors: colors,
+      black: "#22292f",
+      "grey-darkest": "#3d4852",
+      "grey-darker": "#606f7b",
+      "grey-dark": "#8795a1",
+      grey: "#b8c2cc",
+      "grey-light": "#dae1e7",
+      "grey-lighter": "#f1f5f8",
+      "grey-lightest": "#f8fafc",
+      white: "#ffffff",
+
+      "red-darkest": "#3b0d0c",
+      "red-darker": "#621b18",
+      "red-dark": "#cc1f1a",
+      red: "#e3342f",
+      "red-light": "#ef5753",
+      "red-lighter": "#f9acaa",
+      "red-lightest": "#fcebea",
+
+      "orange-darkest": "#462a16",
+      "orange-darker": "#613b1f",
+      "orange-dark": "#de751f",
+      orange: "#f6993f",
+      "orange-light": "#faad63",
+      "orange-lighter": "#fcd9b6",
+      "orange-lightest": "#fff5eb",
+
+      "yellow-darkest": "#453411",
+      "yellow-darker": "#684f1d",
+      "yellow-dark": "#f2d024",
+      yellow: "#ffed4a",
+      "yellow-light": "#fff382",
+      "yellow-lighter": "#fff9c2",
+      "yellow-lightest": "#fcfbeb",
+
+      "green-darkest": "#0f2f21",
+      "green-darker": "#1a4731",
+      "green-dark": "#1f9d55",
+      green: "#38c172",
+      "green-light": "#51d88a",
+      "green-lighter": "#a2f5bf",
+      "green-lightest": "#e3fcec",
+
+      "teal-darkest": "#0d3331",
+      "teal-darker": "#20504f",
+      "teal-dark": "#38a89d",
+      teal: "#4dc0b5",
+      "teal-light": "#64d5ca",
+      "teal-lighter": "#a0f0ed",
+      "teal-lightest": "#e8fffe",
+
+      "blue-darkest": "#12283a",
+      "blue-darker": "#1c3d5a",
+      "blue-dark": "#2779bd",
+      blue: "#3490dc",
+      "blue-light": "#6cb2eb",
+      "blue-lighter": "#bcdefa",
+      "blue-lightest": "#eff8ff",
+
+      "indigo-darkest": "#191e38",
+      "indigo-darker": "#2f365f",
+      "indigo-dark": "#5661b3",
+      indigo: "#6574cd",
+      "indigo-light": "#7886d7",
+      "indigo-lighter": "#b2b7ff",
+      "indigo-lightest": "#e6e8ff",
+
+      "purple-darkest": "#21183c",
+      "purple-darker": "#382b5f",
+      "purple-dark": "#794acf",
+      purple: "#9561e2",
+      "purple-light": "#a779e9",
+      "purple-lighter": "#d6bbfc",
+      "purple-lightest": "#f3ebff",
+
+      "pink-darkest": "#451225",
+      "pink-darker": "#6f213f",
+      "pink-dark": "#eb5286",
+      pink: "#f66d9b",
+      "pink-light": "#fa7ea8",
+      "pink-lighter": "#ffbbca",
+      "pink-lightest": "#ffebef"
+  },
 
   /*
   |-----------------------------------------------------------------------------
@@ -167,14 +124,8 @@ module.exports = {
     sm: "576px",
     md: "768px",
     lg: "992px",
-    xl: "1200px",
-    range: { min: "500px", max: "700px" },
-    skip: [{ min: "500px", max: "700px" }, { min: "900px" }]
+    xl: "1200px"
   },
-
-  // white text at `sm` breakpoint and up
-  // .sm:text-white
-  // .md:text-blue
 
   /*
   |-----------------------------------------------------------------------------
@@ -194,7 +145,7 @@ module.exports = {
   |
   */
 
-  fonts: {
+  fontFamily: {
     sans: [
       "-apple-system",
       "BlinkMacSystemFont",
@@ -205,7 +156,8 @@ module.exports = {
       "Cantarell",
       "Fira Sans",
       "Droid Sans",
-      "Helvetica Neue"
+      "Helvetica Neue",
+      "sans-serif"
     ],
     serif: [
       "Constantia",
@@ -274,7 +226,7 @@ module.exports = {
   |
   */
 
-  fontWeights: {
+  fontWeight: {
     hairline: 100,
     thin: 200,
     light: 300,
@@ -298,7 +250,7 @@ module.exports = {
   |
   */
 
-  leading: {
+  lineHeight: {
     none: 1,
     tight: 1.25,
     normal: 1.5,
@@ -317,7 +269,7 @@ module.exports = {
   |
   */
 
-  tracking: {
+  letterSpacing: {
     tight: "-0.05em",
     normal: "0",
     wide: "0.05em"
@@ -336,7 +288,7 @@ module.exports = {
   |
   */
 
-  textColors: colors,
+  textColor: theme => theme('colors'),
 
   /*
   |-----------------------------------------------------------------------------
@@ -351,7 +303,7 @@ module.exports = {
   |
   */
 
-  backgroundColors: colors,
+  backgroundColor: theme => theme('colors'),
 
   /*
   |-----------------------------------------------------------------------------
@@ -366,7 +318,7 @@ module.exports = {
   |
   */
 
-  borderWidths: {
+  borderWidth: {
     default: "1px",
     "0": "0",
     "2": "2px",
@@ -391,7 +343,7 @@ module.exports = {
   |
   */
 
-  borderColors: Object.assign({ default: colors["grey-light"] }, colors),
+  borderColor: Object.assign({ default: theme => theme('colors')["grey-light"] }, theme => theme('colors')),
 
   /*
   |-----------------------------------------------------------------------------
@@ -402,16 +354,19 @@ module.exports = {
   | is provided, it will be made available as the non-suffixed `.rounded`
   | utility.
   |
-  | Class name: .rounded{-radius?}
+  | If your scale includes a `0` value to reset already rounded corners, it's
+  | a good idea to put it first so other values are able to override it.
+  |
+  | Class name: .rounded{-side?}{-size?}
   |
   */
 
   borderRadius: {
-    default: ".25rem",
+    none: "0",
     sm: ".125rem",
+    default: ".25rem",
     lg: ".5rem",
-    full: "9999px",
-    none: "0"
+    full: "9999px"
   },
 
   /*
@@ -601,7 +556,6 @@ module.exports = {
   |
   */
 
-  // .p{side?}-{size}
   padding: {
     px: "1px",
     "0": "0",
@@ -610,9 +564,7 @@ module.exports = {
     "3": "0.75rem",
     "4": "1rem",
     "6": "1.5rem",
-    "8": "2rem",
-    "16": "4rem",
-    crazy: "8rem"
+    "8": "2rem"
   },
 
   /*
@@ -631,6 +583,7 @@ module.exports = {
   */
 
   margin: {
+    auto: "auto",
     px: "1px",
     "0": "0",
     "1": "0.25rem",
@@ -638,33 +591,14 @@ module.exports = {
     "3": "0.75rem",
     "4": "1rem",
     "6": "1.5rem",
-    "8": "2rem"
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Negative margin                https://tailwindcss.com/docs/negative-margin
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your negative margin utility sizes. These can
-  | be percentage based, pixels, rems, or any other units. By default we
-  | provide matching values to the padding scale since these utilities
-  | generally get used together. You can, of course, modify these
-  | values as needed.
-  |
-  | Class name: .-m{side?}-{size}
-  |
-  */
-
-  negativeMargin: {
-    px: "1px",
-    "0": "0",
-    "1": "0.25rem",
-    "2": "0.5rem",
-    "3": "0.75rem",
-    "4": "1rem",
-    "6": "1.5rem",
-    "8": "2rem"
+    "8": "2rem",
+    "-px": "-1px",
+    "-1": "-0.25rem",
+    "-2": "-0.5rem",
+    "-3": "-0.75rem",
+    "-4": "-1rem",
+    "-6": "-1.5rem",
+    "-8": "-2rem",
   },
 
   /*
@@ -683,7 +617,7 @@ module.exports = {
   |
   */
 
-  shadows: {
+  boxShadow: {
     default: "0 2px 4px 0 rgba(0,0,0,0.10)",
     md: "0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)",
     lg: "0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)",
@@ -705,47 +639,125 @@ module.exports = {
   */
 
   zIndex: {
+    auto: "auto",
     "0": 0,
     "10": 10,
     "20": 20,
     "30": 30,
     "40": 40,
-    "50": 50,
-    auto: "auto"
+    "50": 50
   },
 
   /*
   |-----------------------------------------------------------------------------
-  | Opacity                                https://tailwindcss.com/docs/opacity
+  | SVG fill                                   https://tailwindcss.com/docs/svg
   |-----------------------------------------------------------------------------
   |
-  | Here is where you define your opacity utility values. By default we
-  | provide a sensible numeric scale. You can, of course, modify these
-  | values as needed.
+  | Here is where you define your SVG fill colors. By default we just provide
+  | `fill-current` which sets the fill to the current text color. This lets you
+  | specify a fill color using existing text color utilities and helps keep the
+  | generated CSS file size down.
   |
-  | Class name: .opacity-{name}
+  | Class name: .fill-{name}
   |
   */
 
-  opacity: {
-    "0": "0",
-    "25": ".25",
-    "50": ".5",
-    "75": ".75",
-    "100": "1"
+  fill: {
+    current: "currentColor"
   },
 
   /*
   |-----------------------------------------------------------------------------
-  | Packages
+  | SVG stroke                                 https://tailwindcss.com/docs/svg
   |-----------------------------------------------------------------------------
   |
-  | Here is where you can define the configuration for any Tailwind packages
-  | you're using. These can be utility packs, component bundles, or even
-  | complete themes. You'll want to reference each package's
-  | documentation for a list of settings available for it.
+  | Here is where you define your SVG stroke colors. By default we just provide
+  | `stroke-current` which sets the stroke to the current text color. This lets
+  | you specify a stroke color using existing text color utilities and helps
+  | keep the generated CSS file size down.
+  |
+  | Class name: .stroke-{name}
   |
   */
 
-  packages: {}
+  stroke: {
+    current: "currentColor"
+  },
+},
+
+  /*
+  |-----------------------------------------------------------------------------
+  | Modules                  https://tailwindcss.com/docs/configuration#modules
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you control which modules are generated and what variants are
+  | generated for each of those modules.
+  |
+  | Currently supported variants: 'responsive', 'hover', 'focus'
+  |
+  | To disable a module completely, use `false` instead of an array.
+  |
+  */
+
+  variants: {
+    appearance: ["responsive"],
+    backgroundAttachment: ["responsive"],
+    backgroundColor: ["responsive", "hover"],
+    backgroundPosition: ["responsive"],
+    backgroundRepeat: ["responsive"],
+    backgroundSize: ["responsive"],
+    borderColor: ["responsive", "hover"],
+    borderRadius: ["responsive"],
+    borderStyle: ["responsive"],
+    borderWidth: ["responsive"],
+    boxShadow: ["responsive"],
+    cursor: ["responsive"],
+    display: ["responsive"],
+    fill: [],
+    flexDirection: ["responsive"],
+    flexWrap: ["responsive"],
+    alignItems: ["responsive"],
+    alignSelf: ["responsive"],
+    justifyContent: ["responsive"],
+    alignContent: ["responsive"],
+    flex: ["responsive"],
+    flexGrow: ["responsive"],
+    flexShrink: ["responsive"],
+    float: ["responsive"],
+    fontFamily: ["responsive"],
+    fontSize: ["responsive"],
+    fontWeight: ["responsive", "hover"],
+    height: ["responsive"],
+    letterSpacing: ["responsive"],
+    lineHeight: ["responsive"],
+    listStylePosition: ['responsive'],
+    listStyleType: ['responsive'],
+    margin: ["responsive"],
+    maxHeight: ["responsive"],
+    maxWidth: ["responsive"],
+    minHeight: ["responsive"],
+    minWidth: ["responsive"],
+    negativeMargin: ["responsive"],
+    opacity: ["responsive"],
+    overflow: ["responsive"],
+    padding: ["responsive"],
+    pointerEvents: ["responsive"],
+    position: ["responsive"],
+    inset: ["responsive"],
+    resize: ["responsive"],
+    stroke: [],
+    textAlign: ["responsive"],
+    textColor: ["responsive", "hover"],
+    fontStyle: ["responsive", "hover"],
+    fontSmoothing: ["responsive", "hover"],
+    textDecoration: ["responsive", "hover"],
+    textTransform: ["responsive", "hover"],
+    userSelect: ["responsive"],
+    verticalAlign: ["responsive"],
+    visibility: ["responsive"],
+    whitespace: ["responsive"],
+    wordbreak: ["responsive"],
+    width: ["responsive"],
+    zIndex: ["responsive"]
+  },
 };
