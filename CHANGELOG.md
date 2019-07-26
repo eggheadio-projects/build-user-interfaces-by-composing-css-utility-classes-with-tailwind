@@ -41,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed `@tailwind preflight;` to `@tailwind base;` in `/src/styles.css` on all lessons.
 - Changed the title on `index.html` on lesson 05 to match lesson name.
 
-- Heavily changed `tailwind.js` file due to tailwindcss 1.0.0 update. Changes referenced on the official changelog following the update guide.
+- Heavily changed `tailwind.js` file for all lessons due to tailwindcss 1.0.0 update. Changes referenced on the official changelog following the update guide.
 
 ### Removed
 
