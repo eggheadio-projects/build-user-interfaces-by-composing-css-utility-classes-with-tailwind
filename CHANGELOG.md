@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- None.
+- Lesson 09 was missing code in `src/styles.css` and `tailwind.js`. Added in the code for the lesson. 
 
 ### Changed
 
