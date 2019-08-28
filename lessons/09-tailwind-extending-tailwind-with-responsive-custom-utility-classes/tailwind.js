@@ -702,7 +702,7 @@ module.exports = {
   variants: {
     appearance: ["responsive"],
     backgroundAttachment: ["responsive"],
-    backgroundColor: ["responsive", "hover"],
+    backgroundColor: ["responsive", "hover", "focus", "group-hover"],
     backgroundPosition: ["responsive"],
     backgroundRepeat: ["responsive"],
     backgroundSize: ["responsive"],
