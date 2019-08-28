@@ -1,5 +1,5 @@
 {
-  "repository": "git@github.com:eggheadio-projects/egghead-tailwind.git",
+  "repository": "https://github.com/eggheadio-projects/build-user-interfaces-by-composing-css-utility-classes-with-tailwind",
   "private": true,
   "workspaces": [
     "lessons/*"

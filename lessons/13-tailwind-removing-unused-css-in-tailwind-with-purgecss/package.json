@@ -3,10 +3,10 @@
   "version": "0.0.0-unversioned",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
-    "tailwindcss": "^0.7.4",
-    "gulp-purgecss": "^0.18.0",
-    "browser-sync": "^2.18.13"
+    "gulp-purgecss": "^1.2.0",
+    "tailwindcss": "^1.0.5"
   }
 }
